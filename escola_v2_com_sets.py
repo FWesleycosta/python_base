@@ -4,7 +4,7 @@
 
 Imprimir a lista de crianças agrupadas por sala que frequentam cada uma das atividades.
 """
-__version__ = "0.1.1"
+__version__ = "0.1.0"
 __author__ = "Francisco Wesley"
 __license__= "Unlicense"
 
@@ -30,8 +30,14 @@ for nome_atividade, atividade in atividades:
     print(f"Alunos da atividade {nome_atividade}\n")
     print()
 
-    aula_sala1 = set(alunos_sala1) & set(atividade)
-    aula_sala2 = set(alunos_sala2).intersection(set(atividade))
+    aula_sala1 = []
+    aula_sala2 = []
+
+    for aluno in atividade:
+        if aluno in alunos_sala1:
+            aula_sala1.append(aluno)
+        elif aluno in alunos_sala2:
+            aula_sala2.append(aluno)
 
     print("Sala 1", aula_sala1)
     print("Sala 2", aula_sala2)
