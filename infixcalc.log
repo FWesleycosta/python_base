@@ -1,4 +1,0 @@
-sum,8,8 = 16div,5,19 = 0.2631578947368421div,10,5 = 2.0sum,8,8 = 16
-sub,999,845 = 154
-<built-in method isoformat of datetime.datetime object at 0x7fb569617ea0> - francisco.costa - sum  8  8 = 16
-<built-in method isoformat of datetime.datetime object at 0x7f7f02523ea0> - francisco.costa - sub  764  9 = 755
