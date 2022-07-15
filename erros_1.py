@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from logging import exception
 import os
 import sys
 
@@ -21,7 +20,7 @@ else: #Execute in cause error
     print("Sucesso!!!")
 finally: # Forever execution
     print("Execute isso sempre!")
-    
+
 try:
     print(names[2])
 except:
